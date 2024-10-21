@@ -1,0 +1,7 @@
+Alumno : 12 - aaa
+Materia : MATEMATICAS - Promedio : 5.5
+
+Alumno : 13 - aaa
+Materia : LENGUAJE - Promedio : 6.0
+Materia : CIENCIA - Promedio : 0.0
+

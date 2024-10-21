@@ -1,14 +1,15 @@
 package org.example.Modelos;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Materia {
     private MateriaEnum nombre;
-    private List<Double> notas ;
+    private List<Double> notas;
 
-    public Materia(MateriaEnum nombre, List<Double> notas) {
+    public Materia(MateriaEnum nombre) {
         this.nombre = nombre;
-        this.notas = notas;
+        this.notas = new ArrayList<>();
     }
 
     public MateriaEnum getNombre() {
@@ -25,5 +26,17 @@ public class Materia {
 
     public void setNotas(List<Double> notas) {
         this.notas = notas;
+    }
+
+    public void agregarNota(double nota) {
+        this.notas.add(nota);
+    }
+
+    @Override
+    public String toString() {
+        return "Materia{" +
+                "nombre=" + nombre +
+                ", notas=" + notas +
+                '}';
     }
 }

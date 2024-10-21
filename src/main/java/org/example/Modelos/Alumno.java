@@ -1,5 +1,6 @@
 package org.example.Modelos;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Alumno {
@@ -9,14 +10,12 @@ public class Alumno {
     private String direccion;
     private List<Materia> materias;
 
-
-    public Alumno(String rut, String nombre, String apellido, String direccion, List<Materia> materias) {
+    public Alumno(String rut, String nombre, String apellido, String direccion) {
         this.rut = rut;
         this.nombre = nombre;
         this.apellido = apellido;
         this.direccion = direccion;
-        this.materias = materias;
-
+        this.materias = new ArrayList<>();
     }
 
     public String getRut() {
@@ -58,5 +57,17 @@ public class Alumno {
     public void setMaterias(List<Materia> materias) {
         this.materias = materias;
     }
-}
 
+    // Getters and setters remain the same
+
+    @Override
+    public String toString() {
+        return "Alumno{" +
+                "rut='" + rut + '\'' +
+                ", nombre='" + nombre + '\'' +
+                ", apellido='" + apellido + '\'' +
+                ", direccion='" + direccion + '\'' +
+                ", materias=" + materias +
+                '}';
+    }
+}
